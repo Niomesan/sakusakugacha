@@ -108,6 +108,51 @@
     -webkit-text-stroke-color: white;
 }
 
+@media screen and (max-width:641px) {
+    .title {
+        font-size: 40px;
+    }
+
+    .block {
+        width: 80%;
+    }
+
+    .image {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 961px) {
+    .block {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .block {
+        width: 80%;
+    }
+
+    .image {
+        height: 200px;
+        width: 200px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .btn {
+        height: 70px;
+        width: auto;
+    }
+
+    .btn-text {
+        font-size: 30px;
+    }
+}
+
 </style>
 
 <script setup>
