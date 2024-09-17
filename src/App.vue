@@ -159,11 +159,11 @@
 import { ref, computed } from 'vue';
 
 const gifNames = [
-  "amethyst.gif", "aniki.gif", "apuapu.gif", "bear.gif", "burger_san.gif", 
-  "chicken_san.gif", "dinya.gif", "erechuwan.gif", "fat_bee.gif", "ghost_shan.gif", 
-  "kaeru_chan.gif", "mayo_chan.gif", "misha.gif", "nantekotta.gif", "natsu.gif", 
-  "pie.gif", "shikuron.gif", "sicchan.gif", "sinister.gif", "sloth.gif", 
-  "synth_san.gif", "tamanosuke.gif", "wizard.gif"
+    "amethyst.gif", "burger_san.gif", "erechuwan.gif", "kaeru_chan.gif",
+    "mocchan.gif", "shikuron.gif", "sloth.gif", "aniki.gif", "chicken_san.gif", "fat_bee.gif",
+    "mayo_chan.gif", "nantekotta.gif", "sicchan2.gif", "synth_san.gif", "apuapu.gif", "creeper.gif",
+    "gauchan.gif", "misha2.gif", "natsu.gif", "sicchan.gif", "tamanosuke.gif", "bear.gif", "dinya.gif",
+    "ghost_shan.gif", "misha.gif", "pie.gif", "sinister.gif", "wizard.gif"
 ];
 
 let def = "default.png";
