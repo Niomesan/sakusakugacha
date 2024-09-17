@@ -6,7 +6,9 @@
             <button class="btn" @click="gacha()">
                 <span class="btn-text margarine">Pull! 🐻</span>
             </button>
-            <p></p>
+        </div>
+        <div @click="scRedirect()" class="sc">
+            <p class="sctext margarine">Source Code</p>
         </div>
     </div>
 </template>
@@ -108,6 +110,27 @@
     -webkit-text-stroke-color: white;
 }
 
+.sc {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(201, 72, 94);
+    border-radius: 30px;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+
+.sc:hover {
+    background-color: rgb(108, 214, 161);
+}
+
+.sctext {
+    font-size: 15px;
+    text-align:center;
+    color: white;
+    letter-spacing: 3px;
+}
+
 @media screen and (max-width:641px) {
     .title {
         font-size: 40px;
@@ -180,4 +203,7 @@ function gacha() {
     randomNumber.value = Math.floor(Math.random() * gifNames.length);
 }
 
+function scRedirect() {
+    window.location.href = 'https://github.com/Niomesan/sakusakugacha';
+}
 </script>
