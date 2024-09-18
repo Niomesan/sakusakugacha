@@ -12,6 +12,11 @@
                 <p class="hptext margarine">Homepage</p>
             </div>
         </RouterLink>
+        <RouterLink to="/gachapreview">
+            <div class="pr">
+                <p class="hptext margarine">Drops</p>
+            </div>
+        </RouterLink>
     </nav>
 </template>
 
@@ -90,6 +95,22 @@
     text-align:center;
     color: white;
     letter-spacing: 3px;
+}
+
+.pr {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(201, 72, 94);
+    border-radius: 30px;
+    position: absolute;
+    left: 10px;
+    top: 75px;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+.pr:hover {
+    background-color: rgb(108, 214, 161);
 }
 
 @media screen and (max-width:641px) {
