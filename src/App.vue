@@ -6,6 +6,11 @@
     </router-view>-->
     <div id="bg">
         <RouterView />
+        <div>
+          <p class="margarine" id="credit" style="position: absolute; bottom: 0px; right: 10px; letter-spacing: 1px;">
+            Credits @ <a href="https://www.twitch.tv/sakusaku_pie">sakusaku_pie</a> - Artist and PNGTuber || <a href="https://twitter.com/niomesan">nijo</a> - site developer
+          </p>
+        </div>
     </div>
 </template>
 
@@ -57,4 +62,13 @@ import { RouterView } from 'vue-router';
   font-style: normal;
 }
 
+#credit {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 450px) {
+  #credit {
+    font-size: 9px;
+  }
+}
 </style>
