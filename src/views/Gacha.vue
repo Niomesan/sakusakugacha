@@ -18,6 +18,12 @@
             </div>
         </RouterLink>
     </nav>
+    <div>
+    <p class="margarine" id="credit" style="position: absolute; bottom: 0px; right: 10px; letter-spacing: 1px;">
+        Credits @ <a href="https://www.twitch.tv/sakusaku_pie" style="color: blue;">sakusaku_pie</a> - Artist and PNGTuber || <a href="https://twitter.com/niomesan" style="color: blue;">nijo</a> - site developer
+    </p>
+  </div>
+
 </template>
 
 <style scoped>
@@ -42,6 +48,7 @@
     background: radial-gradient(circle, rgba(255,255,255,0.5970763305322129) 0%, rgba(255,226,205,0.865983893557423) 100%);
     margin: auto;
     border-radius: 70px;
+    padding-bottom: 20px;
 }
 
 .image {
@@ -120,11 +127,21 @@
 
     .block {
         width: 80%;
+        padding-bottom: 0px;
+        height: 550px;
     }
 
     .image {
         height: 300px;
         width: 300px;
+    }
+
+    .hp, .pr {
+        height: 45px;
+    }
+
+    .pr {
+        top: 65px
     }
 }
 

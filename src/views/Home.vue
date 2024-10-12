@@ -18,6 +18,11 @@
     </nav>
     <p class="centertext margarine" style="margin-top: 70px; font-size: 13px; font-weight: lighter; color: rgb(150, 150, 150)">More games are coming later...</p>
   </div>
+  <div>
+    <p class="margarine" id="credit" style="position: absolute; bottom: 0px; right: 10px; letter-spacing: 1px;">
+        Credits @ <a href="https://www.twitch.tv/sakusaku_pie" style="color: blue;">sakusaku_pie</a> - Artist and PNGTuber || <a href="https://twitter.com/niomesan" style="color: blue;">nijo</a> - site developer
+    </p>
+  </div>
 </template>
 
 <style scoped>
