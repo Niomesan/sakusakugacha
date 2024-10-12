@@ -51,4 +51,20 @@ import { RouterView } from 'vue-router';
     font-size: 9px;
   }
 }
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #947d51
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #947d51;
+}
 </style>

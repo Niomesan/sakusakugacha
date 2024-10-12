@@ -9,7 +9,9 @@
     <div class="block">
         <div class="photos">
             <viewer :images id="list">
-                    <img class="image" :src="image" v-for="image, k of images" :key="k"></img>
+                <Tilt v-for="image, k of images" :key="k" :options = "opts">
+                    <img class="image" :src="image"></img>
+                </Tilt>
             </viewer>
         </div>
     </div>
@@ -88,7 +90,9 @@
 </style>
 
 <script lang="ts" setup>
-  const assets = [
+    import Tilt from 'vanilla-tilt-vue';
+
+    const assets = [
             "/previewcards/1.png",
             "/previewcards/2.png",
             "/previewcards/3.png",
@@ -101,4 +105,23 @@
 
 
     const images = Array(assets.length).fill(0).map((_, i) => `/previewcards/${i + 1}.png`);
+
+    const opts = {
+        reverse: true,
+        glare: true,
+        rotation: 100,
+        gyroscope: false,
+    }
+
+    function isMobile() {
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            return true
+        } else {
+            return false
+        }
+    }
+
+    if (isMobile()) {
+        opts.glare = false;
+    }
 </script>
