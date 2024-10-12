@@ -3,20 +3,24 @@
     <p class="sctext margarine">Source code</p>
   </div>
   <div class="block">
-    <div>
+    <div id="blocktop">
       <h1 class="centertext jp">ようこそ！</h1>
       <h2 class="centertext jp">Welcome here!</h2>
     </div>
     <p class="centertext margarine question">What would you like to play?</p>
   
-    <nav>
+    <nav id="navigation">
       <RouterLink to="/gacha">
         <div class="btn transition">
           <p class="btntext margarine" style="text-decoration: none;">Gachapon</p>
         </div>
       </RouterLink>
+      <RouterLink to="/cardsgacha">
+        <div class="btn transition">
+          <p class="btntext margarine" style="text-decoration: none;">Cards</p>
+        </div>
+      </RouterLink>
     </nav>
-    <p class="centertext margarine" style="margin-top: 70px; font-size: 13px; font-weight: lighter; color: rgb(150, 150, 150)">More games are coming later...</p>
   </div>
   <div>
     <p class="margarine" id="credit" style="position: absolute; bottom: 0px; right: 10px; letter-spacing: 1px;">
@@ -35,6 +39,10 @@
     background: radial-gradient(circle, rgba(255,255,255,0.5970763305322129) 0%, rgba(255,226,205,0.865983893557423) 100%);
     margin: auto;
     border-radius: 70px;
+}
+
+#blocktop {
+  margin-top: 160px;
 }
 
 .question {
@@ -114,14 +122,21 @@ a:-webkit-any-link {
   color: white;
 }
 
+#navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+
 @media screen and (max-width:641px) {
   .block {
     width: 90%;
-    height: 65%;
+    height: 70%;
   }
 
   .question {
-    margin-top: 60px;
+    margin-top: 40px;
     font-size: 2rem;
   }
 
@@ -131,6 +146,15 @@ a:-webkit-any-link {
    
   h2 {
     font-size: 1rem;
+  }
+
+  #navigation {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  #blocktop {
+    margin-top: 0px;
   }
 }
 
