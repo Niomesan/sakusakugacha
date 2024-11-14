@@ -101,6 +101,15 @@
             "/previewcards/6.png",
             "/previewcards/7.png",
             "/previewcards/8.png",
+            "/previewcards/9.png",
+            "/previewcards/10.png",
+            "/previewcards/11.png",
+            "/previewcards/12.png",
+            "/previewcards/13.png",
+            "/previewcards/14.png",
+            "/previewcards/15.png",
+            "/previewcards/16.png",
+            "/previewcards/17.png",
         ]
 
 

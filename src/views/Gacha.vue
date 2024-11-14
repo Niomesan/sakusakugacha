@@ -189,6 +189,7 @@ const gifNames = [
 ];
 
 let def = "default.png";
+let audioFile = new Audio ("pull.mp3");
 
 let randomNumber = ref(null);
 
@@ -200,5 +201,6 @@ let reward = computed (() => {
 
 function gacha() {
     randomNumber.value = Math.floor(Math.random() * gifNames.length);
+    audioFile.play();
 }
 </script>

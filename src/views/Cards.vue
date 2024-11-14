@@ -181,10 +181,14 @@
 import { ref, computed } from 'vue';
 
 const gifNames = [
-    "Boowowchancard.gif", "Kudorisancard.gif", "Sinistercard.gif", "Synthkuncard.gif", "Ghostshancard.gif", "Shikuroncard.gif", "Starchancard.gif", "Twitwicard.gif"
+    "amatotosan.gif", "Byargyarsan.gif", "Konmamacard.gif", "Miasancard.gif", "Shikuroncard.gif",
+    "Synthkuncard.gif", "aniki.gif", "Ghostshancard.gif", "Kudorisancard.gif", "mocchan.gif",
+    "Sinistercard.gif", "Twitwicard.gif", "Boowowchancard.gif", "kaeruchan.gif", "Mayochancard.gif", 
+    "Sacchancard.gif", "Starchancard.gif"
 ];
 
 let def = "defaultcard.png";
+let audioFile = new Audio ("pull.mp3");
 
 let randomNumber = ref(null);
 
@@ -196,5 +200,6 @@ let reward = computed (() => {
 
 function gacha() {
     randomNumber.value = Math.floor(Math.random() * gifNames.length);
+    audioFile.play();
 }
 </script>
