@@ -184,7 +184,8 @@ const gifNames = [
     "amatotosan.gif", "Byargyarsan.gif", "Konmamacard.gif", "Miasancard.gif", "Shikuroncard.gif",
     "Synthkuncard.gif", "aniki.gif", "Ghostshancard.gif", "Kudorisancard.gif", "mocchan.gif",
     "Sinistercard.gif", "Twitwicard.gif", "Boowowchancard.gif", "kaeruchan.gif", "Mayochancard.gif", 
-    "Sacchancard.gif", "Starchancard.gif"
+    "Sacchancard.gif", "Starchancard.gif", "andreicsfnaicsf.gif", "atram0rte.gif", "nadeshikoelyo.gif",
+    "nadeshikoelyo.gif"
 ];
 
 let def = "defaultcard.png";

@@ -110,6 +110,10 @@
             "/previewcards/15.png",
             "/previewcards/16.png",
             "/previewcards/17.png",
+            "/previewcards/18.png",
+            "/previewcards/19.png",
+            "/previewcards/20.png",
+            "/previewcards/21.png",
         ]
 
 
