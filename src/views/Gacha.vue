@@ -1,181 +1,37 @@
 <template>
-    <div class="block">
-        <p class="title margarine"><span class="jp">さくさく</span> gacha!</p>
-        <img :src="reward" class="image"></img>
-        <button class="btn" @click="gacha()">
-            <span class="btn-text margarine">Pull! 🐻</span>
-        </button>
-    </div>
-    <nav>
-        <RouterLink to="/">
-            <div class="hp">
-                <p class="hptext margarine">Homepage</p>
-            </div>
-        </RouterLink>
+    <p class="margarine texl-2xl pt-12 md:pt-3 mb-1"><span class="jp">さくさく</span> gacha!</p>
+    <img :src="reward" width="170px" class="md:w-[300px] mb-2"></img>
+    <button
+        class="text-center w-[160px] h-auto bg-amber-600 text-white rounded-xl p-3 text-2xl border-5 border-orange-300 hover:bg-green-700 hover:border-green-500"
+        @click="gacha()">
+        <span class="text-lg font-bold text-center m-auto texthiglight margarine text-white cursor-pointer">Pull!
+            🐻</span>
+    </button>
+    <nav class="pt-5 md:pt-5 pb-3 md:w-[90%] justify-between flex flex-row gap-1 md:gap-3 items-center">
+        <div class="flex flex-row gap-1 md:gap-3">
+            <RouterLink to="/">
+                <button
+                    class="text-center p-1.5 md:p-2 bg-amber-500 text-white rounded-xl text-[12px] md:text-sm border-5 border-orange-300 hover:bg-green-700 hover:border-green-500">
+                    <p class="hptext margarine">Homepage</p>
+                </button>
+            </RouterLink>
+            <RouterLink to="/cardsgacha">
+                <button
+                    class="text-center p-1.5 md:p-2 bg-amber-500 text-white rounded-xl text-[12px] md:text-sm border-5 border-orange-300 hover:bg-green-700 hover:border-green-500">
+                    <p class="hptext margarine">Cards</p>
+                </button>
+            </RouterLink>
+        </div>
         <RouterLink to="/gachapreview">
-            <div class="pr">
+            <button
+                class="text-center p-1.5 md:p-2 bg-amber-500 text-white rounded-xl text-[12px] md:text-sm border-5 border-orange-300 hover:bg-green-700 hover:border-green-500">
                 <p class="hptext margarine">Drops</p>
-            </div>
+            </button>
         </RouterLink>
     </nav>
-    <div>
-    <p class="margarine" id="credit" style="position: absolute; bottom: 0px; right: 10px; letter-spacing: 1px;">
-        Credits @ <a href="https://www.twitch.tv/sakusaku_pie" style="color: blue;">sakusaku_pie</a> - Artist and PNGTuber || <a href="https://twitter.com/niomesan" style="color: blue;">nijo</a> - site developer
-    </p>
-  </div>
-
 </template>
 
-<style scoped>
-.title {
-    font-size: 80px;
-    color: white;
-    text-align: center;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: #ff9d00;
-
-}
-
-.block {
-    display: flex;
-    width: 40%;
-    height: 90%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,0.5970763305322129) 0%, rgba(255,226,205,0.865983893557423) 100%);
-    margin: auto;
-    border-radius: 70px;
-    padding-bottom: 20px;
-}
-
-.image {
-    height: 400px;
-    width: 400px;
-}
-
-.btn {
-    background-color: rgb(241, 241, 111);
-    padding: 15px;
-    margin-top: 70px;
-    margin-bottom: 50px;
-    border: dotted rgb(235, 135, 43) 5px;
-    border-radius: 40px;
-    cursor: pointer;
-    transition: all;
-    transition-duration: 200ms;
-}
-
-.btn:hover {
-    background-color: rgb(108, 214, 161);
-}
-
-.btn-text {
-    color: rgb(201, 72, 94);
-    font-weight: bold;
-    text-align: center;
-    font-size: 50px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-}
-
-.hp {
-    width: 150px;
-    height: 50px;
-    background-color: rgb(201, 72, 94);
-    border-radius: 30px;
-    position: absolute;
-    left: 10px;
-    top: 15px;
-    transition: all;
-    transition-duration: 200ms;
-}
-
-.hp:hover {
-    background-color: rgb(108, 214, 161);
-}
-
-.hptext {
-    font-size: 15px;
-    text-align:center;
-    color: white;
-    letter-spacing: 3px;
-}
-
-.pr {
-    width: 150px;
-    height: 50px;
-    background-color: rgb(201, 72, 94);
-    border-radius: 30px;
-    position: absolute;
-    left: 10px;
-    top: 75px;
-    transition: all;
-    transition-duration: 200ms;
-}
-
-.pr:hover {
-    background-color: rgb(108, 214, 161);
-}
-
-@media screen and (max-width:641px) {
-    .title {
-        font-size: 40px;
-    }
-
-    .block {
-        width: 80%;
-        padding-bottom: 0px;
-        height: 550px;
-    }
-
-    .image {
-        height: 300px;
-        width: 300px;
-    }
-
-    .hp, .pr {
-        height: 45px;
-    }
-
-    .pr {
-        top: 65px
-    }
-}
-
-@media screen and (max-width: 961px) {
-    .block {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .block {
-        width: 80%;
-    }
-
-    .image {
-        height: 200px;
-        width: 200px;
-    }
-
-    .title {
-        font-size: 35px;
-    }
-
-    .btn {
-        height: 70px;
-        width: auto;
-    }
-
-    .btn-text {
-        font-size: 30px;
-    }
-}
-
-</style>
+<style scoped></style>
 
 <script setup>
 import { ref, computed } from 'vue';
@@ -189,12 +45,12 @@ const gifNames = [
 ];
 
 let def = "default.png";
-let audioFile = new Audio ("pull.mp3");
+let audioFile = new Audio("pull.mp3");
 
 let randomNumber = ref(null);
 
 
-let reward = computed (() => {
+let reward = computed(() => {
     if (randomNumber.value == null) return def;
     return "/gif/" + gifNames[randomNumber.value];
 });

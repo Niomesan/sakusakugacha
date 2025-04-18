@@ -1,167 +1,25 @@
 <template>
-  <div class="sc transition" @click="scRedirection()">
-    <p class="sctext margarine">Source code</p>
-  </div>
-  <div class="block">
-    <div id="blocktop">
-      <h1 class="centertext jp">ようこそ！</h1>
-      <h2 class="centertext jp">Welcome here!</h2>
-    </div>
-    <p class="centertext margarine question">What would you like to play?</p>
-  
-    <nav id="navigation">
+  <h2 class="margarine text-center mb-10 md:-mt-30 translate-y-5 text-xl font-bold">What would you like to play?</h2>
+  <div class="flex flex-col gap-3 justify-center items-center">
+    <nav class="flex flex-col gap-3 justify-center items-center">
       <RouterLink to="/gacha">
-        <div class="btn transition">
-          <p class="btntext margarine" style="text-decoration: none;">Gachapon</p>
-        </div>
+          <button class="text-center w-[160px] h-auto bg-amber-600 text-white rounded-xl p-3 px-10 text-2xl border-5 border-orange-300 hover:bg-green-700 hover:border-green-500">Gacha</button>
+          <img src="../../public/default.png" width="45px" class="minipictures absolute z-10 -translate-y-10 -translate-x-3 -rotate-[30deg]" />
       </RouterLink>
       <RouterLink to="/cardsgacha">
-        <div class="btn transition">
-          <p class="btntext margarine" style="text-decoration: none;">Cards</p>
-        </div>
+          <button class="text-center w-[160px] h-auto bg-amber-600 text-white rounded-xl p-3 px-10 text-2xl border-5 border-orange-300 hover:bg-green-700 hover:border-green-500">Cards</button>
+          <img src="../../public/defaultcard.png" width="45px" class="minipictures absolute z-10 translate-x-31 -translate-y-9 rotate-45" />
       </RouterLink>
     </nav>
   </div>
-  <div>
-    <p class="margarine" id="credit" style="position: absolute; bottom: 0px; right: 10px; letter-spacing: 1px;">
-        Credits @ <a href="https://www.twitch.tv/sakusaku_pie" style="color: blue;">sakusaku_pie</a> - Artist and PNGTuber || <a href="https://twitter.com/niomesan" style="color: blue;">nijo</a> - site developer
-    </p>
-  </div>
+  <img class="translate-y-14 md:hidden" src="../../public/decorations/sakucrawl.gif" />
+  <img id="haunt" class="hidden md:block absolute -left-10 lg:-left-90 translate-y-[25%] lg:translate-x-85 w-[300px]" src="../../public/decorations/sakuhaunt.gif" />
 </template>
 
 <style scoped>
-.block {
-    width: 70%;
-    height: 90%;
-    justify-content: center;
-    align-items: center;
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,0.5970763305322129) 0%, rgba(255,226,205,0.865983893557423) 100%);
-    margin: auto;
-    border-radius: 70px;
-}
-
-#blocktop {
-  margin-top: 160px;
-}
-
-.question {
-  margin-top: 100px;
-  color: rgb(86, 175, 131);
-  font-weight: bold;
-  font-size: 40px;
-  letter-spacing: normal;
-}
-
-.btn {
-  background-color: rgb(235, 135, 43);
-  width: 180px;
-  height: 70px;
-  margin: auto;
-  margin-top: 10px;
-  border-radius: 20px;
-}
-
-.btn:hover {
-  background-color: rgb(108, 214, 161);
-}
-
-.btntext {
-  text-align: center;
-  font-size: 25px;
-  padding-top: 15px;
-  color: rgb(241, 241, 111);
-  text-decoration: none;
-  letter-spacing: 3px;
-}
-
-h1 {
-  font-size: 6rem;
-  margin-bottom: -25px;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #ff9d00;
-}
-
-h2 {
-  font-size: 1rem;
-  color: #ff9d00;
-}
-
-.centertext {
-  text-align: center;
-}
-
-.transition {
-  transition: all;
-  transition-duration: 200ms;
-}
-
-a:-webkit-any-link {
-  color: #00000000;
-}
-
-.sc {
-  width: 160px;
-  height: 50px;
-  background-color: rgb(201, 72, 94);
-  position: absolute;
-  left: 10px;
-  top: 15px;
-  border-radius: 30px;
-}
-
-.sc:hover {
-  background-color: rgb(108, 214, 161);
-}
-
-.sctext {
-  text-align: center;
-  font-size: 15px;
-  letter-spacing: 2px;
-  color: white;
-}
-
-#navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 15px;
-}
-
-@media screen and (max-width:641px) {
-  .block {
-    width: 90%;
-    height: 70%;
-  }
-
-  .question {
-    margin-top: 40px;
-    font-size: 2rem;
-  }
-
-  h1 {
-    font-size: 4rem;
-  }
-   
-  h2 {
-    font-size: 1rem;
-  }
-
-  #navigation {
-    flex-direction: column;
-    gap: 0px;
-  }
-
-  #blocktop {
-    margin-top: 0px;
-  }
-}
-
-@media screen and (max-width: 961px) {
-  .block {
-    width: 90%;
-  }
+.minipictures:hover {
+  transform: rotate(360deg);
+  transition: transform 0.5s;
 }
 </style>
 

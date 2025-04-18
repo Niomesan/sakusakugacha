@@ -5,6 +5,7 @@ import GachaView from './views/Gacha.vue'
 import Preview from './views/Preview.vue'
 import Cards from './views/Cards.vue'
 import CardsView from './views/Cardspreview.vue'
+import Test from './views/Test.vue'
 
 const routes = [
     { path: '/', component: Homepage },

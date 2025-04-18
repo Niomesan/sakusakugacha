@@ -1,12 +1,5 @@
 <template>
-    <nav>
-        <RouterLink to="/cardsgacha">
-            <div class="hp">
-                <p class="hptext margarine">Back to gacha</p>
-            </div>
-        </RouterLink>
-    </nav>
-    <div class="block">
+
         <div class="photos">
             <viewer :images id="list">
                 <Tilt v-for="image, k of images" :key="k" :options = "opts">
@@ -14,7 +7,13 @@
                 </Tilt>
             </viewer>
         </div>
-    </div>
+    <nav>
+        <RouterLink to="/cardsgacha">
+            <button class="text-center p-2 mb-3 bg-amber-500 text-white rounded-xl text-sm border-5 border-orange-300 hover:bg-green-700 hover:border-green-500">
+            <p class="hptext margarine">Back to cards</p>
+            </button>
+        </RouterLink>
+    </nav>
 </template>
 
 <style scoped>
@@ -56,10 +55,12 @@
 
 .photos {
     width: 94%;
-    height: 90%;
+    height: 80%;
     background-color: #ff9d002c;
     border-radius: 40px;
     overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 20px;
 }
 
 #list {

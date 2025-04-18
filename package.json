@@ -9,6 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.0.12",
+    "@vueuse/core": "^12.8.2",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.0.2",
+    "tailwindcss": "^4.0.12",
     "v-viewer": "^3.0.13",
     "vanilla-tilt-vue": "^0.1.3",
     "viewerjs": "^1.11.6",
@@ -17,6 +22,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",
+    "fluid-tailwind": "^1.0.4",
     "vite": "^5.3.1"
   }
 }
